@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+@layer base {
+  body {
+    @apply font-body text-paragraph leading-6 bg-gray-200;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-white font-primary;
+  }
+  .section {
+    @apply py-12 lg:py-32;
+  }
+  .section-title {
+    @apply text-3xl lg:text-4xl font-medium lg:font-extrabold mb-5;
+  }
+  .subtitle {
+    @apply text-base text-paragraph mb-16 lg:mb-24 max-w-[520px];
+  }
+  .btn {
+    @apply py-4 px-7 font-medium text-white flex items-center justify-center rounded-sm hover:bg-accent-hover transition-all;
+  }
+  .btn-lg {
+    @apply h-[54px];
+  }
+  .btn-md {
+    @apply h-[48px];
+  }
+  .input {
+    @apply bg-secondary text-paragraph h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-sm focus:outline focus:outline-1 focus:outline-accent;
+  }
+  .textarea {
+    @apply bg-secondary resize-none w-full outline-none p-6 rounded-sm h-[200px] focus:outline focus:outline-1 focus:outline-accent;
+  }
+  .active {
+    @apply text-accent;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ecf0f3;
+  }
+  :root {
+    --yellow: #f5c32c;
+    --orange: #fca61f;
+    --black: #242d49;
+    --gray: #788097;
+    --blueCard: #ddf8fe;
+    --purple: rgb(238 210 255);
+    --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  }
+  .button {
+    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+    border-radius: 34px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 11px 26px 11px 26px;
+  }
+
+  .button:hover {
+    background: white;
+    cursor: pointer;
+
+    color: var(--orange);
+  }
+}
